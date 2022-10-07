@@ -1,0 +1,100 @@
+/* CSS 전체 선택자(*)는 모든 형태의 모든 요소를 선택합니다. */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* #fullheight는 그냥 이름인 것 같음. 100% 높이로 설정하고 싶은 경우, 선언 안에서 'height'이다. */
+html, body #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* CSS 클래스 선택자는 요소의 class 특성에 기반해 요소를 선택합니다. */
+/* 그러니까, 아래의 것은 index.html에 있는 모든 것들 중에서 class에 'container'가 있는 경우 아래의 것을 적용시킨다는 의미이다. */
+/* 이때, button.container 같이 있는 경우에는 button안에 있는 것들 중에서 class가 'container'인 경우를 말함. */
+.container {
+    height: 100%;
+    background-color: black;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+}
+
+.result span{
+    margin-right: 60px;
+    font-size: 210px;
+    justify-self: flex-end;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    border-radius: 100%;
+    width: 210px;
+    height: 210px;
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+
+.percent {
+    background-color: #A5A5A5;
+    border: none;
+    color: black;
+}
+
+.item1 {
+    background-color: #A5A5A5;
+    border: none;
+}
+
+.item3 {
+    background-color: #FF9F0A;
+    border: none;
+}
+
+.numbers, .comma{
+    background-color: #343434;
+    border: none;
+}
+
+.negative, .clear {
+    color: black;
+}
+
+.itemZero {
+    background-color: #343434;
+    width: 435px;
+    border-radius: 135px;
+    grid-column: span 2;
+    border: none;
+}
+
+.selectedSigh {
+    background-color: white;
+    color: #FF9F0A;
+}
+
+.changedStyles {
+    font-size: 10px;
+}
